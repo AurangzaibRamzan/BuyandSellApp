@@ -1,6 +1,5 @@
 import React, {memo, useState} from 'react';
 import {TouchableOpacity, Image, Text, View} from 'react-native';
-
 import Background from '../../../widgets/background';
 import Button from '../../../widgets/button';
 import Input from '../../../widgets/textInput';

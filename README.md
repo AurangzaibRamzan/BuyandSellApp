@@ -1,7 +1,5 @@
 # BuyandSellApp
 
-
-
 ## :information_source: About
 customizable react native application for buying and selling application
 
