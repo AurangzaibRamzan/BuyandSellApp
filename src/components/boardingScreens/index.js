@@ -33,6 +33,7 @@ function BoardingScreens(props) {
         keyExtractor={keyExtractor}
         renderItem={renderItem}
         data={props.boardingScreenData}
+        onDone={() => props.navigation.navigate('login')}
       />
     </View>
   );

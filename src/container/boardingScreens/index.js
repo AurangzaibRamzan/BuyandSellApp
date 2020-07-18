@@ -1,8 +1,8 @@
 import React from 'react';
-import BoardingScreens from '../../components/BoardingScreens';
+import BoardingScreens from '../../components/boardingScreens';
 
 import BoardingScreenData from '../../../config/boardingScreens';
 
-export default function Boarding() {
-  return <BoardingScreens boardingScreenData={BoardingScreenData} />;
+export default function Boarding(porps) {
+  return <BoardingScreens boardingScreenData={BoardingScreenData} {...porps} />;
 }
