@@ -16,6 +16,11 @@ export default function Routing() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
+          name="dashboard"
+          component={TabBar}
+          options={{header: () => null}}
+        />
+        <Stack.Screen
           name="boarding"
           component={BoardingScreen}
           options={{header: () => null}}
@@ -33,11 +38,6 @@ export default function Routing() {
         <Stack.Screen
           name="forgotPassword"
           component={ForgotPasswordScreen}
-          options={{header: () => null}}
-        />
-        <Stack.Screen
-          name="dashboard"
-          component={TabBar}
           options={{header: () => null}}
         />
       </Stack.Navigator>

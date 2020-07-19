@@ -1,17 +1,18 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {View} from 'react-native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
+import Explore from '../container/explore';
+import Chat from '../container/chat';
+import Sell from '../container/sell';
+import Listings from '../container/listings';
+import Profile from '../container/profile';
 import theme from '../../config/theme';
 import style from './styles';
 
 const Tab = createBottomTabNavigator();
-
-function Scr() {
-  return <Text>hello</Text>;
-}
 
 function TabBar() {
   return (
@@ -61,11 +62,11 @@ function TabBar() {
         showLabel: true,
         activeTintColor: theme.colors.primary,
       }}>
-      <Tab.Screen name="Explore" component={Scr} />
-      <Tab.Screen name="Listings" component={Scr} />
-      <Tab.Screen name="Sell" component={Scr} />
-      <Tab.Screen name="Chat" component={Scr} />
-      <Tab.Screen name="Profile" component={Scr} />
+      <Tab.Screen name="Explore" component={Explore} />
+      <Tab.Screen name="Listings" component={Listings} />
+      <Tab.Screen name="Sell" component={Sell} />
+      <Tab.Screen name="Chat" component={Chat} />
+      <Tab.Screen name="Profile" component={Profile} />
     </Tab.Navigator>
   );
 }
