@@ -1,10 +1,13 @@
-import React from 'react';
-import {View, Text} from 'react-native';
+import React, {useEffect} from 'react';
+import {useIsFocused} from '@react-navigation/native';
 
-export default function SellView() {
-  return (
-    <View>
-      <Text>SellView</Text>
-    </View>
-  );
+export default function SellView(props) {
+  const isFocused = useIsFocused();
+  useEffect(() => {
+    if (isFocused) {
+      props.navigation.navigate('selectCategory');
+    }
+  }, [isFocused]);
+  
+  return null;
 }
